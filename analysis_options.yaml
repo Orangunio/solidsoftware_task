@@ -1,1 +1,18 @@
 include: package:solid_lints/analysis_options.yaml
+
+analyzer:
+  errors:
+    public_member_api_docs: ignore
+  exclude:
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+
+linter:
+  rules:
+    avoid_print: true
+    prefer_const_constructors: true
+    prefer_const_declarations: true
