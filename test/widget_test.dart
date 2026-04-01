@@ -10,10 +10,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:solidsoftware_task/src/app.dart';
 
 void main() {
-  testWidgets(
-    'App shows home page and increments tap counter',
-    (WidgetTester tester) async {
-      await tester.pumpWidget(const App());
+  testWidgets('App shows home page and increments tap counter', (
+    WidgetTester tester,
+  ) async {
+    await tester.pumpWidget(const App());
 
     expect(find.text('Hello there'), findsOneWidget);
     expect(find.text('Taps: 0'), findsOneWidget);

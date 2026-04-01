@@ -26,33 +26,34 @@ class _HomePageState extends State<HomePage> {
       _tapCount++;
     });
   }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold( 
-    body: GestureDetector(
-      onTap: _onTap,
-      child: AnimatedContainer(
-        duration: _animationDuration,
-        curve: _animationCurve,
-        color: _backgroundColor,
-        width: double.infinity,
-        height: double.infinity,
-        child: Stack(
-          children: [
-            const BackgroundOverlayWidget(),
-            Center(
-              child: MainTextWidget(backgroundColor: _backgroundColor),
-            ),
-            Positioned(
-              bottom: 100,
-              left: 0,
-              right: 0,
-              child: TapCounterLabelWidget(tapCount: _tapCount),
-            ),
-          ],
+    return Scaffold(
+      body: GestureDetector(
+        onTap: _onTap,
+        child: AnimatedContainer(
+          duration: _animationDuration,
+          curve: _animationCurve,
+          color: _backgroundColor,
+          width: double.infinity,
+          height: double.infinity,
+          child: Stack(
+            children: [
+              const BackgroundOverlayWidget(),
+              Center(
+                child: MainTextWidget(backgroundColor: _backgroundColor),
+              ),
+              Positioned(
+                bottom: 100,
+                left: 0,
+                right: 0,
+                child: TapCounterLabelWidget(tapCount: _tapCount),
+              ),
+            ],
+          ),
         ),
       ),
-    ),
-  );
+    );
   }
 }

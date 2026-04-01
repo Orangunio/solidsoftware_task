@@ -9,9 +9,11 @@ class MainTextWidget extends StatelessWidget {
   final Color backgroundColor;
 
   Color _contrastingTextColor(Color backgroundColor) {
-    final bool isLight = ThemeData.estimateBrightnessForColor(
-      backgroundColor,
-    ) == Brightness.light;
+    final bool isLight =
+        ThemeData.estimateBrightnessForColor(
+          backgroundColor,
+        ) ==
+        Brightness.light;
 
     return isLight ? Colors.black : Colors.white;
   }

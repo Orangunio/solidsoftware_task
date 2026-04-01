@@ -13,7 +13,7 @@ abstract class ColorGenerator {
     final int red = _random.nextInt(_channelMaxValue);
     final int green = _random.nextInt(_channelMaxValue);
     final int blue = _random.nextInt(_channelMaxValue);
-    
+
     return Color.fromARGB(_fullOpacity, red, green, blue);
   }
 }

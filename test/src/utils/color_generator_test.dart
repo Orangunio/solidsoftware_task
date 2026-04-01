@@ -20,7 +20,7 @@ void main() {
   group('ColorGenerator', () {
     test('nextColor returns a fully opaque Color', () {
       final Color color = ColorGenerator.generateRandomColor();
-      
+
       final int alpha = (color.toARGB32() >> alphaShift) & byteMask;
       expect(alpha, equals(expectedOpacity));
     });
@@ -44,14 +44,14 @@ void main() {
         (_) => ColorGenerator.generateRandomColor(),
       );
       final int uniqueCount = colors.toSet().length;
-      
+
       expect(uniqueCount, greaterThan(minUniqueCount));
     });
 
     test('can generate all 16,777,216 possible RGB values', () {
       const int totalColors =
           channelsPerComponent * channelsPerComponent * channelsPerComponent;
-          
+
       expect(totalColors, equals(expectedTotalColors));
     });
   });
