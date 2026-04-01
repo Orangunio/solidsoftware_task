@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 /// A soft radial overlay placed above the background.
-class BackgroundOverlay extends StatelessWidget {
+class BackgroundOverlayWidget extends StatelessWidget {
   /// Creates a background overlay.
-  const BackgroundOverlay({super.key});
+  const BackgroundOverlayWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

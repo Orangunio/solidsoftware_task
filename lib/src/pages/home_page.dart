@@ -39,15 +39,15 @@ class _HomePageState extends State<HomePage> {
         height: double.infinity,
         child: Stack(
           children: [
-            const BackgroundOverlay(),
+            const BackgroundOverlayWidget(),
             Center(
-              child: MainText(backgroundColor: _backgroundColor),
+              child: MainTextWidget(backgroundColor: _backgroundColor),
             ),
             Positioned(
               bottom: 100,
               left: 0,
               right: 0,
-              child: TapCounterLabel(tapCount: _tapCount),
+              child: TapCounterLabelWidget(tapCount: _tapCount),
             ),
           ],
         ),

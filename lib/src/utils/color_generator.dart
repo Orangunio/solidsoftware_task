@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 /// Utilities for generating random background colors.
 abstract class ColorGenerator {
   static const int _channelMaxValue = 256;
+  static const int _fullOpacity = 255;
 
   static final Random _random = Random();
 
@@ -12,6 +13,7 @@ abstract class ColorGenerator {
     final int red = _random.nextInt(_channelMaxValue);
     final int green = _random.nextInt(_channelMaxValue);
     final int blue = _random.nextInt(_channelMaxValue);
-    return Color.fromARGB(0xFF, red, green, blue);
+    
+    return Color.fromARGB(_fullOpacity, red, green, blue);
   }
 }

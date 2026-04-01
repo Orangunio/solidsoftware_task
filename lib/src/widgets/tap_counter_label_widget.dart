@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 /// A label showing how many times the screen has been tapped.
-class TapCounterLabel extends StatelessWidget {
+class TapCounterLabelWidget extends StatelessWidget {
   /// Creates a tap counter label.
-  const TapCounterLabel({required this.tapCount, super.key});
+  const TapCounterLabelWidget({required this.tapCount, super.key});
 
   /// The number of taps to display.
   final int tapCount;

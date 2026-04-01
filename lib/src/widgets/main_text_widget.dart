@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 /// Displays the main greeting text with adaptive contrast.
-class MainText extends StatelessWidget {
+class MainTextWidget extends StatelessWidget {
   /// Creates the main text widget.
-  const MainText({required this.backgroundColor, super.key});
+  const MainTextWidget({required this.backgroundColor, super.key});
 
   /// The background color used to compute a contrasting text color.
   final Color backgroundColor;
